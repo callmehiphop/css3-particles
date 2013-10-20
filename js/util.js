@@ -39,10 +39,7 @@ function random(average, variation) {
 
 
 // for picking out arguments
-function slice(things, start) {
-  start = start || 0;
-  return Array.prototype.slice.call(things, start);
-}
+var slice = Array.prototype.slice;
 
 
 // not using native for the break ability
@@ -64,7 +61,7 @@ function each(things, callback, context) {
 
 
 function extend(target) {
-  each(slice(arguments, 1), function(obj) {
+  each(slice.call(arguments, 1), function(obj) {
     each(obj, function(val, key) {
       target[key] = val;
     });
