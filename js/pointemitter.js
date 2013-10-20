@@ -5,14 +5,14 @@ var PointEmitter = function() {
     el: document.getElementById('container'),
 
     // particles created per second
-    emissionRate: 250,
+    emissionRate: 10,
 
     // current position of emitter
     position: { x: 0, y: 0 },
 
     // life & variation in seconds
-    particleLife: 0.3,
-    particleLifeVariation: 0.2,
+    particleLife: 20,
+    particleLifeVariation: 25,
 
     // particle scale & variation
     particleScale: 1,

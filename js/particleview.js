@@ -6,11 +6,11 @@ var ParticleView = function() {
     emitter: new PointEmitter(),
 
     // emitter speed
-    emitterSpeed: 500,
+    emitterSpeed: 25,
 
     // path stuff
     emitterTheta: 0,
-    emitterRadius: 200,
+    emitterRadius: 150,
 
     // 60 is fps (i hope)
     dt: 1 / 60
