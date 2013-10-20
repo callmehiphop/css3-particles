@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>CSS3 Particles</title>
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <div id="container"></div>
+    <script src="js/util.js"></script>
+    <script src="js/particle.js"></script>
+    <script src="js/pointemitter.js"></script>
+    <script src="js/particleview.js"></script>
+    <script>
+      var partilulz = new ParticleView();
+      requestAFrame(partilulz.update.bind(partilulz));
+    </script>
+  </body>
+</html>
